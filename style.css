@@ -969,6 +969,7 @@ h5 {
     text-align: center;
 }
 
+
 .circle-progress {
     position: relative;
     width: 120px;
@@ -977,6 +978,8 @@ h5 {
 
 .progress-ring {
     transform: rotate(-90deg);
+        z-index: 1;
+
 }
 
 .progress-ring-circle {
