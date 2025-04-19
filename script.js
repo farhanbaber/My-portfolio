@@ -5,4 +5,3 @@ document.querySelectorAll('.circle-progress').forEach(circle => {
     circleProgress.style.strokeDasharray = `${circumference} ${circumference}`;
     circleProgress.style.strokeDashoffset = circumference - (percent / 100) * circumference;
 });
-  

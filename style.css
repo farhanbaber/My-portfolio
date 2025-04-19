@@ -181,6 +181,7 @@ a {
     width: 50%;
     transform: translate(-3px, -5px) rotatez(45deg);
 }
+
 /* media for screen nav bar */
 @media screen and (max-width: 768px) {
 
@@ -208,6 +209,7 @@ a {
         display: flex;
     }
 }
+
 /* hero section */
 .main-container {
     width: 100%;
@@ -218,6 +220,7 @@ a {
     align-items: center;
     padding: 20px;
 }
+
 #card-image {
     width: clamp(250px, 50vw, 500px);
     height: clamp(250px, 80vh, 500px);
@@ -232,10 +235,12 @@ a {
     height: 100%;
     object-fit: cover;
 }
+
 #card-image img {
     animation: myfirst 2s infinite ease;
 
 }
+
 /* animations */
 @keyframes myfirst {
     0% {
@@ -262,6 +267,7 @@ a {
     font-weight: lighter;
     /* border: 2px solid aqua; */
 }
+
 /* media for screen */
 @media (max-width:480px) {
     .content {
@@ -450,6 +456,7 @@ button:active {
 span {
     color: #2980b9;
 }
+
 /* media for screen */
 @media (max-width: 480px) {
     .child-one h1 {
@@ -481,6 +488,7 @@ span {
     align-items: center;
     justify-content: center;
 }
+
 #circle-one {
     position: absolute;
     height: 250px;
@@ -500,6 +508,7 @@ span {
     border-top: 3px solid #3498db;
     animation: ani 2s linear infinite;
 }
+
 /* animation */
 @keyframes ani {
     0% {
@@ -600,6 +609,7 @@ span {
     /* border: 2px solid rgb(141, 119, 23); */
     background-color: rgb(5, 29, 43);
 }
+
 /* media for screnn */
 @media (max-width: 480px) {
     .fluid-container-two {
@@ -620,6 +630,7 @@ span {
     font-weight: bold;
     flex-wrap: wrap;
 }
+
 /* media for screen */
 @media (max-width: 480px) {
     #child-two h1 {
@@ -628,6 +639,7 @@ span {
     }
 
 }
+
 .child-three {
     width: 100%;
     height: 60vh;
@@ -736,6 +748,7 @@ h5 {
     top: 1rem;
 
 }
+
 /* media for screen */
 @media (max-width: 480px) {
     .child-five h1 {
@@ -756,6 +769,7 @@ h5 {
     /* border: 2px solid aqua;/ */
     margin-top: 1rem;
 }
+
 /* media for screen */
 @media (max-width:448px) {
     #responsive-skills {
@@ -763,6 +777,7 @@ h5 {
     }
 
 }
+
 .container {
     display: flex;
     justify-content: space-around;
@@ -967,16 +982,26 @@ h5 {
     flex-direction: column;
     align-items: center;
     text-align: center;
+
 }
 
 .circle-progress {
     position: relative;
     width: 120px;
     height: 120px;
+    overflow: visible;
+
+
+
 }
 
 .progress-ring {
     transform: rotate(-90deg);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+
 }
 
 .progress-ring-circle {
@@ -990,6 +1015,7 @@ h5 {
     stroke-dasharray: 0;
     stroke-dashoffset: 0;
     transition: stroke-dashoffset 1s ease-in-out;
+    stroke-linecap: round;
 }
 
 .percent {
@@ -1026,11 +1052,11 @@ h5 {
         height: 100px;
     }
 
-    .progress-ring-circle {
+    /* .progress-ring-circle {
         cx: 50;
         cy: 50;
         r: 44;
-    }
+    } */
 
     .percent {
         font-size: 20px;
@@ -1057,11 +1083,11 @@ h5 {
         height: 80px;
     }
 
-    .progress-ring-circle {
+    /* .progress-ring-circle {
         cx: 40;
         cy: 40;
         r: 34;
-    }
+    } */
 
     .percent {
         font-size: 18px;
@@ -1072,6 +1098,87 @@ h5 {
     }
 
 }
+
+@media (max-width: 1024px) {
+    .container {
+        gap: 30px;
+    }
+
+    .circle-progress {
+        width: 100px;
+        height: 100px;
+    }
+
+    .percent {
+        font-size: 22px;
+    }
+
+    .label {
+        font-size: 14px;
+    }
+}
+
+
+/* iphone responsive */
+@media (max-width: 320px) {
+    .container {
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .progress-card {
+        min-width: 90px;
+    }
+
+    .circle-progress {
+        width: 65px;
+        height: 65px;
+    }
+
+    .progress-ring-circle {
+        stroke-width: 4;
+    }
+
+    .percent {
+        font-size: 12px;
+    }
+
+    .label {
+        font-size: 10px;
+        margin-top: 5px;
+    }
+}
+
+/* iPhone SE (2nd/3rd gen), 8, 7, 6S, 6, X, XS, 11 Pro, 12, 12 Pro, 13, 13 Pro, 14 (375px) */
+@media (min-width: 321px) and (max-width: 375px) {
+    .container {
+        gap: 12px;
+        padding: 12px;
+    }
+
+    .progress-card {
+        min-width: 100px;
+    }
+
+    .circle-progress {
+        width: 70px;
+        height: 70px;
+    }
+
+    .progress-ring-circle {
+        stroke-width: 4;
+    }
+
+    .percent {
+        font-size: 14px;
+    }
+
+    .label {
+        font-size: 11px;
+        margin-top: 6px;
+    }
+}
+
 
 /* Contact Container */
 
@@ -1303,6 +1410,7 @@ h5 {
     height: 15vh;
     /* border: 2px solid aqua; */
 }
+
 main {
     flex: 1;
 }
