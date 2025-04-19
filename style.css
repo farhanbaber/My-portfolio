@@ -979,6 +979,15 @@ h5 {
 .progress-ring {
     transform: rotate(-90deg);
         z-index: 1;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    -webkit-transform: rotate(-90deg);
+    mask-image: radial-gradient(circle, white 100%, transparent 100%);
+    -webkit-mask-image: radial-gradient(circle, white 100%, transparent 100%);
+      -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  
 
 }
 
