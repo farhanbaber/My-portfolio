@@ -985,6 +985,7 @@ h5 {
 
 }
 
+
 .circle-progress {
     position: relative;
     width: 120px;
@@ -997,11 +998,6 @@ h5 {
 
 .progress-ring {
     transform: rotate(-90deg);
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-
 }
 
 .progress-ring-circle {
@@ -1098,87 +1094,6 @@ h5 {
     }
 
 }
-
-@media (max-width: 1024px) {
-    .container {
-        gap: 30px;
-    }
-
-    .circle-progress {
-        width: 100px;
-        height: 100px;
-    }
-
-    .percent {
-        font-size: 22px;
-    }
-
-    .label {
-        font-size: 14px;
-    }
-}
-
-
-/* iphone responsive */
-@media (max-width: 320px) {
-    .container {
-        gap: 10px;
-        padding: 10px;
-    }
-
-    .progress-card {
-        min-width: 90px;
-    }
-
-    .circle-progress {
-        width: 65px;
-        height: 65px;
-    }
-
-    .progress-ring-circle {
-        stroke-width: 4;
-    }
-
-    .percent {
-        font-size: 12px;
-    }
-
-    .label {
-        font-size: 10px;
-        margin-top: 5px;
-    }
-}
-
-/* iPhone SE (2nd/3rd gen), 8, 7, 6S, 6, X, XS, 11 Pro, 12, 12 Pro, 13, 13 Pro, 14 (375px) */
-@media (min-width: 321px) and (max-width: 375px) {
-    .container {
-        gap: 12px;
-        padding: 12px;
-    }
-
-    .progress-card {
-        min-width: 100px;
-    }
-
-    .circle-progress {
-        width: 70px;
-        height: 70px;
-    }
-
-    .progress-ring-circle {
-        stroke-width: 4;
-    }
-
-    .percent {
-        font-size: 14px;
-    }
-
-    .label {
-        font-size: 11px;
-        margin-top: 6px;
-    }
-}
-
 
 /* Contact Container */
 
