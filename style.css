@@ -1075,7 +1075,65 @@ h5 {
     }
 
 }
+/* iPhone XR, 11, XS Max, 11 Pro Max, 12 Pro Max, 13 Pro Max, 14 Plus (428px) */
+@media (min-width: 415px) and (max-width: 428px) {
+    .container {
+        gap: 18px;
+        padding: 18px;
+    }
 
+    .progress-card {
+        min-width: 110px;
+    }
+
+    .circle-progress {
+        width: 85px;
+        height: 85px;
+    }
+
+    .progress-ring-circle {
+        stroke-width: 5;
+    }
+
+    .percent {
+        font-size: 16px;
+    }
+
+    .label {
+        font-size: 13px;
+        margin-top: 7px;
+    }
+}
+
+/* iPhone 14 Pro, 14 Pro Max (430px) */
+@media (min-width: 429px) and (max-width: 430px) {
+    .container {
+        gap: 18px;
+        padding: 18px;
+    }
+
+    .progress-card {
+        min-width: 110px;
+    }
+
+    .circle-progress {
+        width: 85px;
+        height: 85px;
+    }
+
+    .progress-ring-circle {
+        stroke-width: 5;
+    }
+
+    .percent {
+        font-size: 16px;
+    }
+
+    .label {
+        font-size: 13px;
+        margin-top: 7px;
+    }
+}
 /* Contact Container */
 
 .fluid-container-five {
