@@ -238,7 +238,6 @@ a {
 
 #card-image img {
     animation: myfirst 2s infinite ease;
-
 }
 
 /* animations */
@@ -921,7 +920,7 @@ h5 {
 /* Experiance section*/
 .fluid-container-four {
     width: 100%;
-    height: 50vh;
+    height: 65vh;
     /* border: 2px solid aqua; */
 }
 
@@ -955,10 +954,8 @@ h5 {
 
 .experiance-div {
     width: 100%;
-    height: 40vh;
-    /* border: 2px solid pink; */
+    height: 35vh;
     position: relative;
-    bottom: 16px;
 }
 
 @media (max-width:448px) {
@@ -1225,7 +1222,7 @@ footer {
 
     .fluid-container-five {
         height: 83vh;
-        margin-top: 2rem;
+        margin-top: 5rem;
     }
 
     .contact-form {
@@ -1266,11 +1263,15 @@ footer {
     .back-to-top {
         width: 30px;
         height: 30px;
+        position: relative;
+        bottom: 1rem;
     }
 
     .back-to-top svg {
         width: 16px;
         height: 16px;
+        position: relative;
+        bottom: 1rem;
     }
     
 }
