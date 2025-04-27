@@ -1155,15 +1155,17 @@ footer {
     width: 20px;
     height: 20px;
     fill: #fff;
+    
 }
 
-@media  (max-width: 768px) {
+@media (max-width: 768px) {
 
 
-    .fluid-container-five{
+    .fluid-container-five {
         position: relative;
-        top: 6rem;
+        top: 9rem;
     }
+
     .form-container {
         flex-direction: column;
         gap: 15px;
@@ -1213,6 +1215,7 @@ footer {
         height: 18px;
     }
 }
+
 @media (max-width: 480px) {
     .child-seven h1 {
         font-size: 30px;
@@ -1263,18 +1266,18 @@ footer {
     .back-to-top {
         width: 30px;
         height: 30px;
-        position: relative;
-        bottom: 1rem;
+        position: relative ;
+        bottom:  1rem;
     }
 
     .back-to-top svg {
         width: 16px;
         height: 16px;
-        position: relative;
-        bottom: 1rem;
+       
     }
-    
+
 }
+
 /* experiance section */
 .container {
     display: flex;
@@ -1354,18 +1357,22 @@ footer {
         flex-direction: column;
         gap: 30px;
     }
+
     .progress-card {
         width: 90%;
         max-width: 300px;
     }
+
     .circle-progress {
         width: 100px;
         height: 100px;
     }
+
     .progress-ring {
         width: 100px;
         height: 100px;
     }
+
     .percent {
         font-size: 20px;
         margin-bottom: 10px;
@@ -1373,6 +1380,7 @@ footer {
 
 
     }
+
     .label {
         font-size: 14px;
     }
