@@ -1266,8 +1266,7 @@ footer {
     .back-to-top {
         width: 30px;
         height: 30px;
-        position: relative ;
-        bottom:  1rem;
+       
     }
 
     .back-to-top svg {
