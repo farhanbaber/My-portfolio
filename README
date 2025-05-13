@@ -1,9 +1,64 @@
+ 💼 Personal Portfolio Website
+
+A modern, responsive, and professional portfolio website to showcase my skills, projects, and contact information as a developer.
+
+---
+
+🌐 Live Demo
+
+👉 [Visit My Portfolio(farhaanbaber.vercel.app)]
+
+---
+
+ 📑 Table of Contents
+
+
 - [📖 About](#-about)
 - [✨ Features](#-features)
 - [🛠️ Technologies Used](#-technologies-used)
-- [🖼️ Screenshots](#-screenshots)
 - [🚀 Getting Started](#-getting-started)
 - [💻 Usage](#-usage)
 - [🤝 Contributing](#-contributing)
 - [📜 License](#-license)
 - [📬 Contact](#-contact)
+
+---
+
+📖 About
+
+This is my personal developer portfolio website, built to professionally present my skills, experience, and the projects I've worked on. It serves as my digital resume and point of contact for potential clients, collaborators, or employers.
+
+---
+
+ ✨ Features
+
+- Modern and responsive UI
+- Dark & Light theme toggle (if available)
+- Mobile-first design
+- Projects showcase section
+- Skills, Education, and Experience
+- Contact form (functional or placeholder)
+- Smooth scroll and animations
+
+---
+
+🛠️ Technologies Used
+
+- || HTML5 ||
+- || CSS3 | TailwindCSS | Bootstrap || 
+- || JavaScript | React.js ||
+- || EmailJS ||  
+
+---
+
+🚀 Getting Started
+
+```bash
+# Clone https://github.com/farhanbaber/My-portfolio/edit/main/READM
+
+# If using React (skip if plain HTML/CSS)
+npm install
+
+# Run the development server
+npm start
+
