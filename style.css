@@ -6,35 +6,36 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+
 /* Fullscreen Loader */
- #loader {
-      position: fixed;
-      inset: 0;
-      background-color: rgb(5, 29, 43);
-      z-index: 999999;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      transition: opacity 0.5s ease;
-    }
+#loader {
+    position: fixed;
+    inset: 0;
+    background-color: rgb(5, 29, 43);
+    z-index: 999999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.5s ease;
+}
 
-    .spinner {
-      width: 60px;
-      height: 60px;
-      border: 6px solid transparent;
-      border-top: 6px solid white;
-      border-right: 6px solid rgb(19, 77, 110);
-      border-bottom: 6px solid white;
-      border-radius: 50%;
-      animation: spin 1s linear infinite;
-    }
+.spinner {
+    width: 60px;
+    height: 60px;
+    border: 6px solid transparent;
+    border-top: 6px solid white;
+    border-right: 6px solid rgb(19, 77, 110);
+    border-bottom: 6px solid white;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
 
-    @keyframes spin {
-      to {
+@keyframes spin {
+    to {
         transform: rotate(360deg);
-      }
     }
-  
+}
+
 html {
     height: 100%;
     width: 100%;
@@ -1184,7 +1185,7 @@ footer {
     width: 20px;
     height: 20px;
     fill: #fff;
-    
+
 }
 
 @media (max-width: 768px) {
@@ -1297,13 +1298,13 @@ footer {
     .back-to-top {
         width: 30px;
         height: 30px;
-       
+
     }
 
     .back-to-top svg {
         width: 16px;
         height: 16px;
-       
+
     }
 
 }
@@ -1382,21 +1383,23 @@ footer {
 }
 
 /* Responsive Design */
-@media (max-width:720) {
-     #four-one{
+@media (max-width:480) {
+    #four-one {
         position: relative;
         top: 13rem;
     }
-    
+
 }
+
 @media (max-width: 768px) {
     .container {
         flex-direction: column;
         gap: 30px;
-       
-        
+
+
     }
-    #four-one{
+
+    #four-one {
         position: relative;
         top: 9rem;
     }
