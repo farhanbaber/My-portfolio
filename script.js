@@ -15,14 +15,26 @@ document.querySelectorAll('.circle-progress').forEach(progress => {
 
 // loader
 
-window.addEventListener('load', () => {
-    const loader = document.getElementById('loader');
+  // window.addEventListener('load', () => {
+  //     const loader = document.getElementById('loader');
 
-    setTimeout(() => {
-      loader.style.opacity = '0';
-    }, 1000); 
+  //     setTimeout(() => {
+  //       loader.style.opacity = '0';
+  //     }, 1000); 
 
-    setTimeout(() => {
-      loader.style.display = 'none';
-    }, 2000); 
-  });
+  //     setTimeout(() => {
+  //       loader.style.display = 'none';
+  //     }, 2000); 
+  //   });
+ window.addEventListener('load', () => {
+      console.log("Loader loaded");
+      const loader = document.getElementById('loader');
+
+      setTimeout(() => {
+        loader.style.opacity = '0';
+      }, 1000);
+
+      setTimeout(() => {
+        loader.style.display = 'none';
+      }, 2000);
+    });
