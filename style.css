@@ -1386,6 +1386,12 @@ footer {
     .container {
         flex-direction: column;
         gap: 30px;
+       
+        
+    }
+    #four-one{
+        position: relative;
+        top: 14rem;
     }
 
     .progress-card {
