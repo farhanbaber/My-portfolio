@@ -1383,13 +1383,6 @@ footer {
 }
 
 /* Responsive Design */
-@media (max-width:480) {
-    #four-one {
-        position: relative;
-        top: 13rem;
-    }
-
-}
 
 @media (max-width: 768px) {
     .container {
@@ -1401,7 +1394,7 @@ footer {
 
     #four-one {
         position: relative;
-        top: 9rem;
+        top: 12rem;
     }
 
     .progress-card {
