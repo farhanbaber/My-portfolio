@@ -1386,7 +1386,7 @@ footer {
 @media (max-width: 414px) {
     .container{
         position: relative;
-        bottom: 2rem;
+        bottom: -2rem;
 
 
     }
