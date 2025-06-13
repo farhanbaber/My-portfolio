@@ -1383,7 +1383,15 @@ footer {
 }
 
 /* Responsive Design */
+@media (max-width: 414px) {
+    .container{
+        position: relative;
+        bottom: 2rem;
 
+
+    }
+    
+}
 @media (max-width: 768px) {
     .container {
         flex-direction: column;
