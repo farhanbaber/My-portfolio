@@ -22,9 +22,9 @@
 <body id="boddy" style="margin:0;">
 
 <!-- Loader -->
-<div id="loader">
+<!-- <div id="loader">
   <div class="spinner"></div>
-</div>
+</div> -->
 
     <!-- Header -->
     <header>
@@ -93,10 +93,11 @@
 
     <body>
        <!-- Hero section -->
+        <div data-scroll-container>
         <div class="main-container" id="one">
             <div class="content">
-                <h1 class="animate__animated animate__fadeInLeft">Hi, I Am Farhan Baber</h1>
-                <h2 id="h2" class="animate__animated animate__fadeInLeft">I am a <span class="auto-type"></span></h2>
+                <h1 class="animate__animated animate__fadeInLeft" id="h-type">Hi, I Am Farhan Baber</h1>
+                <h2 id="h2" class="animate__animated animate__fadeInLeft">I am a <span class="auto-type" id="h-type"></span></h2>
                 <p class="animate__animated animate__fadeInLeft">I am a frontend developer focused on crafting clean UI responsive and friendly interfaces. I build websites that don't just look good but they feel right. My toolkit includes HTML || CSS || JAVASCRIPT and modern framework like React.</p>
                 <div class="social-icons">
                     <a href="http://linkedin.com/in/farhan-b-417a5034b" class="animate__animated animate__fadeInLeft"><i class="fab fa-linkedin"></i></a>
@@ -113,14 +114,14 @@
             </div>
         </div>
 <!-- About Section -->
- <div class="fluid-container-one" data-aos="fade-up" id="two"> 
-    <div class="child-one"><h1>|| About  <span> Me </span>||</h1></div>
+ <div class="fluid-container-one" data-aos="fade-up" id="two" data-scroll-container> 
+    <div class="child-one"><h1>| About  <span id="h-type"> Me </span> |</h1></div>
     <section class="portfolio-section">
 
                <div id="profile-image">
                 <div id="circle-one"></div>
                     <div id="circle-two"></div>
-            <img src="images/WhatsApp_Image_2025-05-01_at_02.25.41_9f8188e0-removebg-preview.png" alt="Profile Picture" class="head-img">
+            <img src="images/WhatsApp_Image_2025-05-01_at_02.25.41_9f8188e0-removebg-preview.png" alt="Profile Picture" class="head-img" data-scroll data-scroll-speed="2">
             
         </div>
         
@@ -140,7 +141,7 @@
  <!-- Work Section -->
   <div class="fluid-container-two" data-aos="fade-up" id="three">
     <div id="child-two">
-        <h1>|| MY <span>Projects</span> ||</h1>
+        <h1>| MY <span id="h-type">Projects</span> |</h1>
     </div>        
 <div class="slider-container">
     <div id="Work" class="item i4" >
@@ -284,14 +285,14 @@
   <!-- Skills Section -->
    <div class="fluid-container-three" data-aos="fade-up">
     <div class="child-five" id="four">
-      <h1>|| My <span>Skills</span> ||</h1>
+      <h1>| My <span id="h-type">Skills</span> |</h1>
     </div>
     <div class="skills-container" id="responsive-skills">
       
     <div class="container" >
         <!-- Coding Skills Section -->
         <div class="skills-section" data-aos="fade-up">
-            <h2>Coding Skills</h2>
+            <h2 id="h2">Coding Skills</h2>
             <div class="skill">
                 <span class="skill-name">HTML</span>
                 <div class="progress-bar" id="progress-div">
@@ -321,7 +322,7 @@
 
         <!-- Professional Skills Section -->
         <div class="skills-section" data-aos="fade-up">
-            <h2>Professional Skills</h2>
+            <h2 id="h2">Professional Skills</h2>
             <div class="skill">
                 <span class="skill-name">Web Development</span>
                 <div class="progress-bar" id="progress-div">
@@ -353,7 +354,7 @@
    <!-- Experiance Section -->
     <div class="fluid-container-four" data-aos="fade-up" id="five">
       <div class="child-six">
-        <h1>|| My <span>Experiance</span> ||</h1>
+        <h1>| My <span id="h-type">Experiance</span> |</h1>
       </div>
       <div class="experiance-div">
 <!-- older one -->
@@ -414,7 +415,7 @@
 <!-- Contact Section -->
 <div class="fluid-container-five"  id="six">
   <div class="child-seven">
-    <h1>|| Contact <span>Me</span> ||</h1>
+    <h1>| Contact <span id="h-type">Me</span> |</h1>
   </div>
   <div class="container-resp-from">
     <div class="contact-form">
@@ -465,7 +466,9 @@
     
     </footer>    
  </div>
+ </div>
     <!-- script links -->
+
 
         <script src="./script.js"></script>
         <script>
@@ -493,10 +496,12 @@
       looped : true
     });
   </script>
+
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     AOS.init();
   </script>
+
   
 
 </body>
