@@ -21,9 +21,9 @@ document.querySelectorAll('.circle-progress').forEach(progress => {
 
       setTimeout(() => {
         loader.style.opacity = '0';
-      }, 1000);
+      }, 3000);
 
       setTimeout(() => {
         loader.style.display = 'none';
-      }, 2000);
+      }, 4000);
     });
