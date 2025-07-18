@@ -14,7 +14,8 @@ document.querySelectorAll('.circle-progress').forEach(progress => {
 });
 
 
- window.addEventListener('load', () => {
+
+   window.addEventListener('load', () => {
       console.log("Loader loaded");
       const loader = document.getElementById('loader');
 
@@ -26,5 +27,3 @@ document.querySelectorAll('.circle-progress').forEach(progress => {
         loader.style.display = 'none';
       }, 2000);
     });
-
-  

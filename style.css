@@ -8,34 +8,86 @@
 }
 
 /* Fullscreen Loader */
-#loader {
-    position: fixed;
-    inset: 0;
-    background-color: rgb(5, 29, 43);
-    z-index: 999999;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: opacity 0.5s ease;
-}
 
-.spinner {
-    width: 60px;
-    height: 60px;
-    border: 6px solid transparent;
-    border-top: 6px solid white;
-    border-right: 6px solid rgb(19, 77, 110);
-    border-bottom: 6px solid white;
-    border-radius: 50%;
-    animation: spin 1s linear infinite;
-}
-
-@keyframes spin {
-    to {
-        transform: rotate(360deg);
+   #loader {
+      position: fixed;
+      inset: 0;
+      background-color: rgb(5, 29, 43);
+      z-index: 999999;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: opacity 0.5s ease;
+      flex-direction: column;
     }
-}
 
+    .logo-container {
+      position: relative;
+      width: 200px;
+      height: 200px;
+    }
+
+    .logo-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      z-index: 2;
+      position: relative;
+    }
+
+    .animated-border {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 3px solid transparent;
+      border-radius: 20px;
+      animation: borderMove 2s linear infinite;
+      z-index: 1;
+    }
+
+    @keyframes borderMove {
+      0% {
+        border-top: 3px solid white;
+        border-right: 3px solid transparent;
+        border-bottom: 3px solid transparent;
+        border-left: 3px solid transparent;
+        transform: rotate(0deg);
+      }
+      25% {
+        border-top: 3px solid transparent;
+        border-right: 3px solid white;
+      }
+      50% {
+        border-right: 3px solid transparent;
+        border-bottom: 3px solid white;
+      }
+      75% {
+        border-bottom: 3px solid transparent;
+        border-left: 3px solid white;
+      }
+      100% {
+        border-left: 3px solid transparent;
+        border-top: 3px solid white;
+        transform: rotate(360deg);
+      }
+    }
+
+    @keyframes spin {
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    @media (max-width: 600px) {
+      .logo-container {
+        width: 140px;
+        height: 140px;
+      }
+
+  
+    }
 html {
     height: 100%;
     width: 100%;
@@ -499,12 +551,19 @@ button:active {
         width: 100%;
         position: relative;
         bottom: 4rem;
+        /* border: 2px solid red; */
     }
 
     .child-one h1 {
         position: relative;
         top: 10px;
     }
+}
+@media (max-width: 768px) {
+    .fluid-container-one{
+        height: 105vh;
+    }
+    
 }
 
 .child-one {
