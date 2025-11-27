@@ -883,7 +883,7 @@ h5 {
     }
 
     .fluid-container-three {
-        height: 140vh;
+        height: 115vh;
     }
 
 
@@ -913,13 +913,12 @@ h5 {
     margin: 0 auto;
     padding: 20px;
     /* border: 2px solid red; */
-    height: auto;
 }
-
+/* ================= Skills Section ================= */
 .skills-section {
     flex: 1;
     min-width: 280px;
-    background-color: rgba(5, 29, 43, );
+    background-color: rgba(5, 29, 43, 0.8);
     padding: 20px;
     border: 2px solid #00aaff;
     border-radius: 10px;
@@ -963,14 +962,6 @@ h5 {
     color: white;
     transition: width 1s ease-in-out;
 }
-.progress-card {
-    flex: 1 1 200px; /* flex-grow:1, flex-shrink:1, flex-basis:200px */
-    max-width: 250px; /* optional, to prevent them from stretching too much */
-    background-color: rgba(5, 29, 43, 0.8);
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-}
 
 #progress-line {
     background-color: #00abf0;
@@ -979,18 +970,68 @@ h5 {
 
 #progress-div {
     background-color: white;
-
-
 }
 
+/* ================= Progress Card (Experience) ================= */
+.experiance-div .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    margin: 0 auto;
+}
 
-/* Responsive Design */
+.experiance-div .progress-card {
+    flex: 1 1 220px;      /* flexible width */
+    max-width: 250px;     /* prevent overstretch */
+    background-color: rgba(5, 29, 43, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.circle-progress {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 10px auto;
+}
+
+.progress-ring {
+    transform: rotate(-90deg);
+}
+
+.progress-ring-circle {
+    fill: transparent;
+    stroke: #ddd;
+    stroke-linecap: round;
+}
+
+.progress-ring-circle.progress {
+    stroke: #00aaff;
+}
+
+/* ================= Fluid Container / Heading ================= */
+.fluid-container-four {
+    width: 100%;
+    min-height: 92vh;
+}
+
+.child-six {
+    text-align: center;
+    color: #ffffff;
+}
+
+.child-six h1 {
+    font-size: 60px;
+    font-weight: bold;
+    flex-wrap: wrap;
+}
+
+/* ================= Responsive Adjustments ================= */
 @media (max-width: 1024px) {
-
-    .container {
-        padding: 15px;
-    }
-
     .skills-section {
         min-width: 45%;
     }
@@ -1001,10 +1042,7 @@ h5 {
 }
 
 @media (max-width: 768px) {
-
     .container {
-        flex-direction: column;
-        align-items: center;
         padding: 10px;
     }
 
@@ -1029,10 +1067,14 @@ h5 {
     .progress {
         font-size: 10px;
     }
+
+    /* Experience Cards 2 per row */
+    .experiance-div .progress-card {
+        flex: 1 1 45%;
+    }
 }
 
 @media (max-width: 480px) {
-
     .skills-section h2 {
         font-size: 16px;
     }
@@ -1052,56 +1094,21 @@ h5 {
     #prog {
         width: 200px;
     }
-}
 
-/* Experiance section*/
-.fluid-container-four {
-    width: 100%;
-    height: 92vh;
-    /* border: 2px solid aqua; */
-}
+    /* Experience Cards 1 per row */
+    .experiance-div .progress-card {
+        flex: 1 1 95%;
+    }
 
-.child-six {
-    /* border: 2px solid red; */
-    text-align: center;
-    color: #ffffff;
-
-}
-
-.child-six h1 {
-
-    font-size: 60px;
-    font-weight: bold;
-    flex-wrap: wrap;
-}
-
-@media (max-width: 480px) {
     .child-six h1 {
         font-size: 30px;
-
     }
 
     .fluid-container-four {
-        height: 72vh;
+        min-height: 72vh;
         margin-top: 2rem;
-        /* border: 2px solid aqua; */
     }
-
 }
-
-.experiance-div {
-    width: 100%;
-    height: 35vh;
-    position: relative;
-}
-
-@media (max-width:448px) {
-    .experiance-div {
-        height: 65vh;
-    }
-
-}
-
 
 /* footer*/
 .fluid-container-five {
