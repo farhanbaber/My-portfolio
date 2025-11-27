@@ -821,7 +821,7 @@ span {
 #a-tag:hover {
     background: none;
     transition: 0.2s ease-in-out;
-    color: red;
+    color: rgb(255, 255, 255);
 
 }
 
@@ -842,6 +842,7 @@ h5 {
     transition: 0.5s ease-in-out;
     filter: brightness(50%);
     transform: scale(1.1);
+    cursor: pointer;
 
 }
 
@@ -852,7 +853,7 @@ h5 {
 /* Skills Section*/
 .fluid-container-three {
     width: 100%;
-    height: 75vh;
+    height: 85vh;
     /* border: 2px solid red; */
     background-color: #032a3acc;
 }
@@ -890,8 +891,8 @@ h5 {
 
 .skills-container {
     width: 100%;
-    height: 58vh;
-    /* border: 2px solid aqua;/ */
+    height: 68vh;
+    /* border: 2px solid aqua; */
     margin-top: 1rem;
 }
 
@@ -905,12 +906,13 @@ h5 {
 
 .container {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
+    /* border: 2px solid red; */
 }
 
 .skills-section {
@@ -959,6 +961,14 @@ h5 {
     font-size: 11px;
     color: white;
     transition: width 1s ease-in-out;
+}
+.progress-card {
+    flex: 1 1 200px; /* flex-grow:1, flex-shrink:1, flex-basis:200px */
+    max-width: 250px; /* optional, to prevent them from stretching too much */
+    background-color: rgba(5, 29, 43, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
 }
 
 #progress-line {
@@ -1046,7 +1056,7 @@ h5 {
 /* Experiance section*/
 .fluid-container-four {
     width: 100%;
-    height: 85vh;
+    height: 92vh;
     /* border: 2px solid aqua; */
 }
 
