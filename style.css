@@ -883,7 +883,7 @@ h5 {
     }
 
     .fluid-container-three {
-        height: 100vh;
+        height: 140vh;
     }
 
 
@@ -913,6 +913,7 @@ h5 {
     margin: 0 auto;
     padding: 20px;
     /* border: 2px solid red; */
+    height: auto;
 }
 
 .skills-section {
