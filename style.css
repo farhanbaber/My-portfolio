@@ -883,7 +883,7 @@ h5 {
     }
 
     .fluid-container-three {
-        height: 115vh;
+        height: 10vh;
     }
 
 
@@ -904,122 +904,120 @@ h5 {
 
 }
 
+/* ================= GLOBAL RESET ================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ================= GLOBAL CONTAINER ================= */
 .container {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 25px;
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
-    /* border: 2px solid red; */
-}
-/* ================= Global Container Fix ================= */
-.container {
-    display: flex;
-    flex-wrap: wrap;           /* allow wrapping */
-    justify-content: center;   /* center items in row */
-    gap: 20px;                 /* spacing between items */
-    width: 100%;
-    margin: 0 auto;
-    box-sizing: border-box;
 }
 
-/* ================= Skills Section ================= */
+/* ================= SKILLS SECTION ================= */
 .skills-section {
-    flex: 1 1 280px;             /* flexible width */
-    background-color: rgba(5, 29, 43, 0.8);
-    padding: 20px;
+    flex: 1 1 300px;
+    background: rgba(5, 29, 43, 0.9);
     border: 2px solid #00aaff;
-    border-radius: 10px;
-    box-sizing: border-box;
-    margin-bottom: 20px;
+    border-radius: 16px;
+    padding: 25px;
+    max-width: 500px;
 }
 
 .skills-section h2 {
-    font-size: 22px;
-    margin-bottom: 15px;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #00e0ff;
     text-align: center;
-    color: white;
 }
 
 .skill {
-    margin-bottom: 12px;
+    margin-bottom: 14px;
 }
 
 .skill-name {
-    display: block;
-    font-size: 15px;
-    margin-bottom: 3px;
-    color: white;
+    font-size: 16px;
+    color: #ffffff;
+    margin-bottom: 6px;
 }
 
 .progress-bar {
-    background-color: #ccd0d8;
-    border-radius: 20px;
-    height: 15px;
+    width: 100%;
+    background-color: #1e3a5f;
+    height: 18px;
+    border-radius: 25px;
     overflow: hidden;
-    position: relative;
 }
 
 .progress {
-    background-color: #00aaff;
     height: 100%;
-    border-radius: 20px;
+    background: linear-gradient(90deg, #00aaff, #00e0ff);
+    border-radius: 25px;
+    color: #fff;
     display: flex;
-    align-items: center;
     justify-content: flex-end;
-    padding-right: 5px;
-    font-size: 11px;
-    color: white;
-    transition: width 1s ease-in-out;
+    align-items: center;
+    padding-right: 10px;
+    font-size: 12px;
+    font-weight: bold;
+    transition: width 1.8s ease-in-out;
 }
 
-#progress-line {
-    background-color: #00abf0;
-}
-
-#progress-div {
-    background-color: white;
-}
-
-/* ================= Experience Section ================= */
-.experiance-div {
+/* ================= EXPERIENCE SECTION ================= */
+.experience-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
     width: 100%;
-    padding: 20px 0;
-    box-sizing: border-box;
+    max-width: 1300px;
+    margin: 30px auto;
+    padding: 0 15px;
 }
 
-.experiance-div .progress-card {
-    flex: 1 1 220px;          /* flexible width */
-    max-width: 250px;          /* prevent stretching */
-    background-color: rgba(5, 29, 43, 0.8);
-    padding: 20px;
-    border-radius: 10px;
+.progress-card {
+    background: rgba(5, 29, 43, 0.95);
+    border: 2px solid #00aaff;
+    border-radius: 16px;
+    padding: 25px 10px;
     text-align: center;
-    margin-bottom: 20px;       /* spacing for wrapped rows */
-    box-sizing: border-box;
 }
 
+/* CIRCLE */
 .circle-progress {
-    position: relative;
     width: 120px;
     height: 120px;
-    margin: 0 auto 10px auto;
+    margin: 0 auto 15px;
+    position: relative;
 }
 
 .progress-ring {
+    width: 120px;
+    height: 120px;
     transform: rotate(-90deg);
 }
 
-.progress-ring-circle {
-    fill: transparent;
-    stroke: #ddd;
-    stroke-linecap: round;
+.progress-ring circle {
+    fill: none;
+    stroke-width: 7;
 }
 
-.progress-ring-circle.progress {
+.track {
+    stroke: #12344b;
+}
+
+.progress-stroke {
     stroke: #00aaff;
+    stroke-dasharray: 360;
+    stroke-dashoffset: 360;
+    transition: stroke-dashoffset 2s;
 }
 
 .percent {
@@ -1027,139 +1025,85 @@ h5 {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 16px;
+    font-size: 26px;
     font-weight: bold;
-    color: white;
+    color: #00eaff;
 }
 
 .label {
-    font-size: 14px;
-    margin-top: 10px;
+    font-size: 17px;
+    color: #e0f7ff;
+    margin-top: 5px;
+}
+
+/* ================= HEADING ================= */
+.child-six h1 {
+    font-size: 55px;
+    text-align: center;
+    margin-bottom: 25px;
     color: white;
 }
 
-/* ================= Fluid Container / Heading ================= */
-.fluid-container-four {
-    width: 100%;
-    padding: 20px 0;
+#h-type {
+    color: #00aaff;
 }
 
-.child-six {
-    text-align: center;
-    color: #ffffff;
-    margin-bottom: 20px;
-}
+/* ================= FULL RESPONSIVE ================= */
 
-.child-six h1 {
-    font-size: 60px;
-    font-weight: bold;
-    flex-wrap: wrap;
-}
-
-/* ================= Responsive Adjustments ================= */
+/* Tablet */
 @media (max-width: 1024px) {
-    .skills-section {
-        min-width: 45%;
+    .child-six h1 { font-size: 48px; }
+}
+
+/* Large Mobile */
+@media (max-width: 768px) {
+    .child-six h1 { font-size: 40px; }
+    .experience-grid {
+        grid-template-columns: 1fr;
+    }
+    .progress-card {
+        padding: 20px;
+    }
+}
+
+/* Small Mobile (iPhone X, XS, XS Max, SE, Android small) */
+@media (max-width: 480px) {
+    .child-six h1 { font-size: 32px; }
+
+    .circle-progress, .progress-ring {
+        width: 100px;
+        height: 100px;
     }
 
-    .skills-section h2 {
+    .percent {
         font-size: 20px;
     }
-}
 
-@media (max-width: 768px) {
-    .skills-section {
-        width: 95%;
-        max-width: 500px;
-        min-width: auto;
+    .label {
+        font-size: 15px;
     }
 
-    .skills-section h2 {
-        font-size: 18px;
-    }
-
-    .skill-name {
-        font-size: 14px;
-    }
-
-    .progress-bar {
-        height: 16px;
-    }
-
-    .progress {
-        font-size: 10px;
+    .experience-grid {
+        gap: 18px;
     }
 
     .progress-card {
-        flex: 1 1 45%;          /* 2 per row on tablets */
+        padding: 18px 10px;
     }
 }
 
-@media (max-width: 480px) {
-    .skills-section h2 {
-        font-size: 16px;
+/* SUPER SMALL DEVICES (VERY IMPORTANT FIX) */
+/* This fixes the CODE ALPHA card going down */
+@media (max-width: 380px) {
+    .experience-grid {
+        grid-template-columns: 1fr;
     }
-
-    .skill-name {
-        font-size: 13px;
-    }
-
-    .progress-bar {
-        height: 14px;
-    }
-
-    .progress {
-        font-size: 9px;
-    }
-
-    #prog {
-        width: 200px;
-    }
-
     .progress-card {
-        flex: 1 1 95%;          /* 1 per row on mobile */
-    }
-
-    .child-six h1 {
-        font-size: 30px;
-    }
-
-    .circle-progress {
-        width: 100px;
-        height: 100px;
-    }
-
-    .progress-ring {
-        width: 100px;
-        height: 100px;
-    }
-
-    .percent {
-        font-size: 14px;
+        width: 100%;
     }
 }
 
-/* Extra small screens (<360px) */
-@media (max-width: 360px) {
-    .progress-card {
-        flex: 1 1 100%;
-        padding: 15px;
-    }
 
-    .circle-progress {
-        width: 90px;
-        height: 90px;
-    }
-
-    .progress-ring {
-        width: 90px;
-        height: 90px;
-    }
-
-    .percent {
-        font-size: 12px;
-    }
-}
 
 /* footer*/
 .fluid-container-five {
