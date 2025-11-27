@@ -8,6 +8,12 @@
 }
 
 /* Fullscreen Loader */
+ :root {
+            --color-primary: #00aaff;
+            --color-secondary: #00eaff;
+            --color-dark: rgba(5, 29, 43, 0.95);
+            --color-track: #12344b;
+        }
 
    #loader {
       position: fixed;
@@ -964,207 +970,79 @@ h5 {
 }
 
 /* ================= EXPERIENCE SECTION ================= */
-.experience-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 25px;
-    max-width: 1300px;
-    width: 100%;
-    margin: 35px auto;
-    padding: 0 15px;
+   
+
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    /* border: 2px solid red; */
 }
-/* ================= CARD BASE ================= */
-.progress-card {
-    background: rgba(5, 29, 43, 0.95);
+
+.skills-section {
+    flex: 1;
+    min-width: 280px;
+    background-color: rgba(5, 29, 43, );
+    padding: 20px;
     border: 2px solid #00aaff;
-    border-radius: 16px;
-    padding: 25px 10px;
+    border-radius: 10px;
+}
+
+.skills-section h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-/* ================= CIRCLE BASE ================= */
-.circle-progress {
-    width: 140px;
-    height: 140px;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.progress-ring {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0; 
-    left: 0;
-    transform: rotate(-90deg);
-}
-
-.progress-ring circle {
-    fill: none;
-    stroke-width: 10;
-}
-
-/* Track & Stroke */
-.track {
-    stroke: #12344b;
-}
-
-.progress-stroke {
-    stroke: #00aaff;
-    stroke-dasharray: 360;
-    stroke-dashoffset: 360;
-    transition: stroke-dashoffset 2s ease;
-}
-
-/* Number in Center */
-.percent {
-    position: relative;
-    z-index: 10;
-    font-size: 32px;
-    font-weight: 700;
-    color: #00eaff;
-}
-
-.label {
-    font-size: 17px;
-    color: #e0f7ff;
-    margin-top: 5px;
-}
-
-/* ================= HEADING ================= */
-.child-six h1 {
-    font-size: 55px;
-    text-align: center;
-    margin-bottom: 25px;
     color: white;
 }
 
-#h-type {
-    color: #00aaff;
+.skill {
+    margin-bottom: 12px;
 }
 
-/* ================= RESPONSIVE FIXES ================= */
-
-/* Tablet */
-@media (max-width: 1024px) {
-    .child-six h1 { font-size: 48px; }
-
-    .circle-progress {
-        width: 130px;
-        height: 130px;
-        margin-top: 5px;       /* vertical center adjustment */
-        margin-left: 20px;     /* move circle slightly right */
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-    }
-
-    .percent {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        font-size: 28px;
-    }
+.skill-name {
+    display: block;
+    font-size: 15px;
+    margin-bottom: 3px;
+    color: white;
 }
 
-/* Large Mobile */
-@media (max-width: 768px) {
-    .child-six h1 { font-size: 40px; }
-    .experience-grid { grid-template-columns: 1fr; }
-
-    .progress-card { 
-        padding: 25px 15px;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start; /* circle align left for margin-left effect */
-    }
-
-    .circle-progress {
-        width: 120px;
-        height: 120px;
-        margin-top: 10px;
-        margin-left: 20px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-    }
-
-    .percent {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        font-size: 26px;
-    }
+.progress-bar {
+    background-color: #ccd0d8;
+    border-radius: 20px;
+    height: 15px;
+    overflow: hidden;
+    position: relative;
 }
 
-/* Normal Mobile */
-@media (max-width: 480px) {
-    .child-six h1 { font-size: 32px; }
-
-    .circle-progress {
-        width: 110px;
-        height: 110px;
-        margin-top: 12px;
-        margin-left: 15px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-    }
-
-    .percent { 
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        font-size: 24px;
-    }
-
-    .label { font-size: 15px; }
-
-    .progress-card { padding: 20px 12px; }
+.progress {
+    background-color: #00aaff;
+    height: 100%;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 5px;
+    font-size: 11px;
+    color: white;
+    transition: width 1s ease-in-out;
 }
 
-/* Smallest Devices */
-@media (max-width: 380px) {
-
-    .circle-progress {
-        width: 95px;
-        height: 95px;
-        margin-top: 15px;
-        margin-left: 10px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-    }
-
-    .percent { 
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        font-size: 20px;
-    }
-
-    .experience-grid { grid-template-columns: 1fr; }
-
-    .progress-card { 
-        width: 100%;
-        padding: 18px 10px;
-    }
+#progress-line {
+    background-color: #00abf0;
+    color: #ffffff;
 }
 
+#progress-div {
+    background-color: white;
 
+
+}
+  
 /* footer*/
 .fluid-container-five {
     width: 100%;
