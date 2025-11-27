@@ -855,7 +855,7 @@ h5 {
     width: 100%;
     height: 85vh;
     /* border: 2px solid red; */
-    background-color: #032a3acc;
+    /* background-color: #032a3acc; */
 }
 
 .child-five {
@@ -902,13 +902,6 @@ h5 {
         height: 105vh;
     }
 
-}
-
-/* ================= GLOBAL RESET ================= */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
 }
 
 /* ================= GLOBAL CONTAINER ================= */
@@ -980,20 +973,22 @@ h5 {
     margin: 35px auto;
     padding: 0 15px;
 }
-
+/* ================= CARD BASE ================= */
 .progress-card {
     background: rgba(5, 29, 43, 0.95);
     border: 2px solid #00aaff;
     border-radius: 16px;
     padding: 25px 10px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-/* PERFECT RESPONSIVE CIRCLE FIX */
+/* ================= CIRCLE BASE ================= */
 .circle-progress {
     width: 140px;
     height: 140px;
-    margin: 0 auto 15px;
     position: relative;
     display: flex;
     justify-content: center;
@@ -1026,7 +1021,7 @@ h5 {
     transition: stroke-dashoffset 2s ease;
 }
 
-/* PERFECT CENTER NUMBER */
+/* Number in Center */
 .percent {
     position: relative;
     z-index: 10;
@@ -1047,97 +1042,127 @@ h5 {
     text-align: center;
     margin-bottom: 25px;
     color: white;
-    position: relative;
-    top: 1rem;
 }
 
 #h-type {
     color: #00aaff;
 }
 
-/* ================= FULL RESPONSIVE ================= */
+/* ================= RESPONSIVE FIXES ================= */
 
 /* Tablet */
 @media (max-width: 1024px) {
     .child-six h1 { font-size: 48px; }
+
+    .circle-progress {
+        width: 130px;
+        height: 130px;
+        margin-top: 5px;       /* vertical center adjustment */
+        margin-left: 20px;     /* move circle slightly right */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    .percent {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 28px;
+    }
 }
 
 /* Large Mobile */
 @media (max-width: 768px) {
     .child-six h1 { font-size: 40px; }
-    .experience-grid {
-        grid-template-columns: 1fr;
+    .experience-grid { grid-template-columns: 1fr; }
+
+    .progress-card { 
+        padding: 25px 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; /* circle align left for margin-left effect */
     }
-    .progress-card {
-        padding: 20px;
+
+    .circle-progress {
+        width: 120px;
+        height: 120px;
+        margin-top: 10px;
+        margin-left: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    .percent {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 26px;
     }
 }
 
-/* Small Mobile (iPhone X, XS, XS Max, SE, Android small) */
+/* Normal Mobile */
 @media (max-width: 480px) {
     .child-six h1 { font-size: 32px; }
 
     .circle-progress {
-        width: 95px;
-        height: 95px;
+        width: 110px;
+        height: 110px;
+        margin-top: 12px;
+        margin-left: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
     }
 
-    .percent {
+    .percent { 
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 24px;
+    }
+
+    .label { font-size: 15px; }
+
+    .progress-card { padding: 20px 12px; }
+}
+
+/* Smallest Devices */
+@media (max-width: 380px) {
+
+    .circle-progress {
+        width: 95px;
+        height: 95px;
+        margin-top: 15px;
+        margin-left: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    .percent { 
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
         font-size: 20px;
     }
 
-    .label {
-        font-size: 15px;
-    }
+    .experience-grid { grid-template-columns: 1fr; }
 
-    .experience-grid {
-        gap: 18px;
-    }
-
-    .progress-card {
+    .progress-card { 
+        width: 100%;
         padding: 18px 10px;
     }
 }
-
-/* SUPER SMALL DEVICES FIX (Code Alpha card dropping issue fix) */
-@media (max-width: 380px) {
-    .experience-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .progress-card {
-        width: 100%;
-    }
-
-    .circle-progress {
-        width: 85px;
-        height: 85px;
-    }
-
-    .percent {
-        font-size: 18px;
-    }
-}
-@media (max-width: 480px) {
-    .circle-progress {
-        width: 110px;
-        height: 110px;
-    }
-    .percent {
-        font-size: 24px;
-    }
-}
-
-@media (max-width: 380px) {
-    .circle-progress {
-        width: 95px;
-        height: 95px;
-    }
-    .percent {
-        font-size: 20px;
-    }
-}
-
 
 
 /* footer*/
