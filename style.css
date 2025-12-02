@@ -1048,7 +1048,7 @@ h5 {
     width: 100%;
     height: 90vh;
     background-color: #032a3acc;
-    border: 2px solid red;
+    /* border: 2px solid red; */
 
 
 }
@@ -1297,7 +1297,9 @@ footer {
 }
 @media only screen and (max-height: 812px) {
     .fluid-container-five {
-        top: 3rem; /* 9rem → 3rem uper = 6rem */
+        top: 4rem; /* 9rem → 3rem uper = 6rem */
+              background-color: rgb(5, 29, 43);
+
     }
 }
 
